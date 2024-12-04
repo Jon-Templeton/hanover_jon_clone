@@ -116,7 +116,7 @@ export function SearchResults({ result, isLoading, searchQuery }: SearchResultsP
                     />
                   </svg>
                 </Button>
-                <Button className="bg-[#5ED5A8] hover:bg-[#5ED5A8]/90 text-black">Share</Button>
+                <Button className="bg-blue-500 hover:bg-blue-600 text-white">Share</Button>
               </div>
             </div>
 
@@ -162,7 +162,7 @@ export function SearchResults({ result, isLoading, searchQuery }: SearchResultsP
                 <section className="bg-gray-800/30 rounded-lg p-6">
                   <div className="flex items-center gap-2 mb-4">
                     <svg
-                      className="w-6 h-6 text-[#5ED5A8]"
+                      className="w-6 h-6 text-white"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -174,7 +174,7 @@ export function SearchResults({ result, isLoading, searchQuery }: SearchResultsP
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span className="text-[#5ED5A8] font-medium">Perplexity</span>
+                    <span className="text-white font-large font-semibold">Perplexity</span>
                   </div>
                   <div className="prose prose-invert max-w-none">
                     <p>{item.result.content}</p>
@@ -185,7 +185,7 @@ export function SearchResults({ result, isLoading, searchQuery }: SearchResultsP
           </div>
         ))}
 
-        <div className="relative">
+        <div className="relative max-w-2xl">
           <input
             type="text"
             placeholder="Ask follow-up"
@@ -196,7 +196,7 @@ export function SearchResults({ result, isLoading, searchQuery }: SearchResultsP
                 handleFollowUpSearch();
               }
             }}
-            className="w-full bg-gray-800/50 text-gray-300 rounded-lg px-4 py-3 pr-20 focus:outline-none focus:ring-2 focus:ring-[#5ED5A8]"
+            className="w-full bg-gray-800/50 text-gray-300 rounded-lg px-4 py-3 pr-20 focus:outline-none focus:ring-2 focus:ring-white"
           />
           <Button 
             className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600"

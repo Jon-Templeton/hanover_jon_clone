@@ -62,7 +62,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black">
       <Sidebar />
       <main className="pl-[240px] pb-[60px]">
         {!searchResult && !isLoading ? (
@@ -81,7 +81,7 @@ export default function Home() {
                     handleSearch();
                   }
                 }}
-                className="w-full bg-gray-800/50 text-gray-300 rounded-lg px-4 py-3 pr-12 focus:outline-none focus:ring-2 focus:ring-[#5ED5A8]"
+                className="w-full bg-gray-800/50 text-gray-300 rounded-lg px-4 py-3 pr-12 focus:outline-none focus:ring-2 focus:ring-white"
               />
               <button
                 onClick={handleSearch}
