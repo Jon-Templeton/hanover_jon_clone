@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Sidebar />
-      <main className="pl-[240px]">
+      <main className="pl-[240px] pb-[60px]">
         {!searchResult && !isLoading ? (
           <div className="max-w-3xl mx-auto pt-32 px-4">
             <h1 className="text-4xl font-semibold text-white text-center mb-8">
@@ -131,33 +131,33 @@ export default function Home() {
             searchQuery={searchQuery}
           />
         )}
-        <footer className="fixed bottom-0 left-[240px] right-0 p-4 flex items-center justify-between text-sm text-gray-400 border-t border-gray-800 bg-[#1C1F1C]">
-          <div className="flex items-center gap-4">
-            <button className="hover:text-gray-300">Pro</button>
-            <button className="hover:text-gray-300">Enterprise</button>
-            <button className="hover:text-gray-300">Store</button>
-            <button className="hover:text-gray-300">Blog</button>
-            <button className="hover:text-gray-300">Careers</button>
-          </div>
-          <div className="flex items-center gap-4">
-            <button className="hover:text-gray-300">English (English)</button>
-            <button className="p-1.5 hover:text-gray-300">
-              <span className="sr-only">Help</span>
-              <svg
-                viewBox="0 0 24 24"
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                <path d="M12 17h.01" />
-              </svg>
-            </button>
-          </div>
-        </footer>
       </main>
+      <footer className="fixed bottom-0 left-[240px] right-0 p-4 flex items-center justify-between text-sm text-gray-400 border-t border-gray-800 bg-[#1C1F1C] z-10">
+        <div className="flex items-center gap-4">
+          <button className="hover:text-gray-300">Pro</button>
+          <button className="hover:text-gray-300">Enterprise</button>
+          <button className="hover:text-gray-300">Store</button>
+          <button className="hover:text-gray-300">Blog</button>
+          <button className="hover:text-gray-300">Careers</button>
+        </div>
+        <div className="flex items-center gap-4">
+          <button className="hover:text-gray-300">English (English)</button>
+          <button className="p-1.5 hover:text-gray-300">
+            <span className="sr-only">Help</span>
+            <svg
+              viewBox="0 0 24 24"
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <path d="M12 17h.01" />
+            </svg>
+          </button>
+        </div>
+      </footer>
     </div>
   )
 }
